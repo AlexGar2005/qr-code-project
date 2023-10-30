@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #20202e;
+}
+
+.card {
+    background-color: #fff;
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 40px 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    text-align: left;
+}
+
+.card input {
+    margin-top: 15px;
+    border-color: #727070;
+    outline: 0;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 7px;
+    flex: 1;
+    font-size: 18px;
+    
+}
+
+.imgBox {
+    margin-top: 50px;
+    display: none;
+}
+
+.error {
+    text-align: left;
+    display: none;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.card button {
+    background-color: #494eea;
+    border-radius: 7px;
+    border: none;
+    padding: 20px 20px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.card button:hover {
+    cursor: pointer;
+}
+
+.shake {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    0% { transform: translate(5px, 0px) }
+    10% { transform: translate(-5px, 0px)}
+    20% { transform: translate(4px, 0px)}
+    30% { transform: translate(-4px, 0px)}
+    40% { transform: translate(3px, 0px)}
+    50% { transform: translate(-3px, 0px)}
+    60% { transform: translate(2px, 0px)}
+    70% { transform: translate(-2px, 0px)}
+    80% { transform: translate(1px, 0px)}
+    90% { transform: translate(1px, 0px)}
+    100% { transform: translate(0px, 0px)}
+}
